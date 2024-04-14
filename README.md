@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Github](https://github.com/Eugene-ak/recipe-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://recipe-page-one-weld.vercel.app/](https://recipe-page-one-weld.vercel.app/)
 
 ## My process
 

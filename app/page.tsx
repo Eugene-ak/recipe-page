@@ -123,7 +123,7 @@ export default function Home() {
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
           </a>
-          . Coded by <a href="#">Eugene Amedior</a>.
+          . Coded by <a href="https://portfolio-website-27ll.onrender.com/">Eugene Amedior</a>.
         </div>
       </footer>
     </>
