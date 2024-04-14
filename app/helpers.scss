@@ -10,3 +10,16 @@ $dark_charcoal: hsl(24, 5%, 18%);
 
 // Fonts
 $font_size: 16px;
+
+// mixins
+@mixin list_style($color) {
+  padding: 0.3rem 1rem;
+
+  &::marker {
+    color: $color;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}

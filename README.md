@@ -11,16 +11,14 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/screenshot.png)
 
 ### Links
 
@@ -37,19 +35,38 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-It turns out that when using tables in next js, all content of the table must be wrapped in a **thead** (table head) or **tbody** (table body)
+- It turns out that when using tables in next js, all content of the table must be wrapped in a **thead** (table head) or **tbody** (table body). This is because next js does not generate those tags around table elements when not specified as is in the case of html.
 
-### Continued development
+- I also learned how to use local fonts in nexts js without using the css approach/variables. This is an example snippet
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+```js
+import Outfit from "next/font/local";
+import YoungSerif from "next/font/local";
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+export const outfit = Outfit({
+  src: "./../public/assets/fonts/outfit/Outfit-VariableFont_wght.ttf",
+  display: "swap"
+});
+
+export const youngSerif = YoungSerif({
+  src: "./../public/assets/fonts/young-serif/YoungSerif-Regular.ttf",
+  display: "swap"
+});
+```
+
+I created a file called **font.ts** in my app directory and exported the fonts needed for the project. I then imported them by class names in the files where they will be needed.
+
+```html
+<html lang="en">
+  <body className={outfit.className}>{children}</body>
+</html>
+```
 
 ### Useful resources
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+#### Getting Started
 
 First, run the development server:
 
@@ -69,7 +86,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+#### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -78,14 +95,9 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Author
 
 - Website - [Eugene K. S. Amedior](https://www.your-site.com)
 - Frontend Mentor - [@Eugene-ak](https://www.frontendmentor.io/profile/Eugene-ak)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)

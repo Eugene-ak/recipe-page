@@ -9,4 +9,4 @@ export const outfit = Outfit({
 export const youngSerif = YoungSerif({
   src: "./../public/assets/fonts/young-serif/YoungSerif-Regular.ttf",
   display: "swap"
-})
+});
