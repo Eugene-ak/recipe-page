@@ -37,7 +37,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### What I learned
 
-It turns out that when using tables in next js, all content of the table must be wrapped in a **thead**(table head) or **tbody
+It turns out that when using tables in next js, all content of the table must be wrapped in a **thead** (table head) or **tbody** (table body)
 
 ### Continued development
 

@@ -1,11 +1,13 @@
 import Image from "next/image";
 import omelette from "@/public/assets/images/image-omelette.jpeg";
+import { youngSerif } from "./fonts";
+import style from "./home.module.scss";
 
 export default function Home() {
   return (
-    <main>
-      <Image src={omelette} alt="omelette" />
-      <h1>Simple Omelette Recipe</h1>
+    <main className={style.main}>
+      <Image src={omelette} className={style.image} alt="omelette" />
+      <h1 className={`${youngSerif.className}`}>Simple Omelette Recipe</h1>
       <p>
         An easy and quick dish, perfect for any meal. This classic omelette
         combines beaten eggs cooked to perfection, optionally filled with your
@@ -19,7 +21,7 @@ export default function Home() {
       </ul>
 
       <section>
-        <h2>Ingredients</h2>
+        <h2 className={`${youngSerif.className}`}>Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
@@ -32,7 +34,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Instructions</h2>
+        <h2 className={`${youngSerif.className}`}>Instructions</h2>
         <ol>
           <li>
             Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
@@ -62,7 +64,7 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Nutrition</h2>
+        <h2 className={`${youngSerif.className}`}>Nutrition</h2>
         <p>
           The table below shows nutritional values per serving without the
           additional fillings.
